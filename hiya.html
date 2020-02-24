@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Calculator </title>
+<script language="javascript">
+    alert("Welcome, lets try it")
+    function tambah()
+    {
+    var a,b,c;
+    a=document.forms.a.value;
+    b=document.forms.b.value;
+    c=parseFloat(a)+parseFloat(b);
+    document.forms.c.value=c;
+    }
+    function kurang()
+    {
+    var a,b,c;
+    a=document.forms.a.value;
+    b=document.forms.b.value;
+    c=parseFloat(a)-parseFloat(b);
+    document.forms.c.value=c;
+    }
+    function kali()
+    {
+    var a,b,c;
+    a=document.forms.a.value;
+    b=document.forms.b.value;
+    c=parseFloat(a)*parseFloat(b);
+    document.forms.c.value=c;
+    }
+    function bagi()
+    {
+    var a,b,c;
+    a=document.forms.a.value;
+    b=document.forms.b.value;
+    c=parseFloat(a)/parseFloat(b);
+    document.forms.c.value=c;
+    }
+    
+    document.write("Dimodifikasi terakhir pada "+document.lastModified);
+
+</script>
+</head>
+<body>
+<form name="forms">
+
+    Bil 1 <input type="text" name=a placeholder="Masukkan Angka" />
+     <input type="button" value="+" onclick="tambah()" />
+    <input type="button" value="-" onclick="kurang()" /><br/>
+    Bil 2 <input type="text" name=b placeholder="Masukkan Angka" />
+    <input type="button" value="*" onclick="kali()" />
+    <input type="button" value="/" onclick="bagi()" /><br/><br>
+    Hasil <input type="text" name=c disabled="true" />
+    <input type="reset" value="Reset" />
+
+</form>
+</body>
+</html>
